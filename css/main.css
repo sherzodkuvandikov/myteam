@@ -578,7 +578,12 @@ START STYLING
   display: -ms-flexbox;
   display: flex;
   color: #fff;
-  margin-top: 250px;
-  margin-bottom: 250px;
+}
+
+.site-header__bottom-heading {
+  min-width: 635px;
+  font-size: 100px;
+  line-height: 100px;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */
