@@ -366,6 +366,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: "Arial", sans-serif;
+  background-color: #2C6269;
 }
 
 img {
@@ -492,6 +493,10 @@ START STYLING
           flex-direction: column;
   padding: 73px 160px;
   background-color: #014E56;
+  background-image: url(../../images/bg-pattern-home-1.svg), url(../../images/bg-pattern-home-2.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -100px center, right bottom;
 }
 
 .site-header__wrapper {
@@ -556,9 +561,12 @@ START STYLING
 .nav-list__link {
   display: inline-block;
   text-decoration: none;
-  color: #fff;
   margin-right: 40px;
   margin-left: auto;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
   -webkit-transition: color .3s ease, background-color .3s ease;
   transition: color .3s ease, background-color .3s ease;
 }
@@ -577,13 +585,76 @@ START STYLING
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   color: #fff;
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .site-header__bottom-heading {
+  margin: 0;
+  padding: 0;
   min-width: 635px;
   font-size: 100px;
   line-height: 100px;
   color: #fff;
+  margin-right: 30px;
+}
+
+.text-pink {
+  color: #F67E7E;
+}
+
+.site-header__bottom-text {
+  position: relative;
+  margin: 0;
+  padding-top: 79px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.site-header__bottom-text:before {
+  position: absolute;
+  top: 0;
+  content: "";
+  height: 4px;
+  width: 50px;
+  background-color: #79C8C7;
+}
+
+@media only screen and (max-width: 1200px) {
+  .site-header {
+    padding: 30px;
+  }
+  .site-header__bottom {
+    padding: 100px 0;
+  }
+  .site-header__bottom-heading {
+    font-size: 60px;
+    margin-left: 80px;
+  }
+  .site-header__bottom-text {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1086px) {
+  .site-header__bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 80px;
+  }
+  .site-header__bottom-heading {
+    margin-left: 0;
+  }
+  .site-header__bottom-text {
+    max-width: 500px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
