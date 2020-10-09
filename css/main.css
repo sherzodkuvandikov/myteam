@@ -657,4 +657,33 @@ START STYLING
     max-width: 500px;
   }
 }
+
+@media only screen and (max-width: 770px) {
+  .site-header {
+    background-image: none;
+  }
+  .site-header__bottom {
+    display: block;
+    width: 100%;
+    background-image: none;
+    padding-left: 0;
+  }
+  .site-header__bottom-heading {
+    white-space: normal;
+    font-size: 64px;
+    line-height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .site-header__bottom-text {
+    width: 457px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-header__bottom-text::before {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
