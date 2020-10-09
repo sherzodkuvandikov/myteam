@@ -627,6 +627,86 @@ START STYLING
   background-color: #79C8C7;
 }
 
+.site-footer {
+  background-color: #002529;
+}
+
+.site-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.nav-list__link--modifier {
+  margin-right: 0;
+}
+
+.site-address {
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.footer__img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.img-box__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 16px;
+  color: #fff;
+}
+
+.footer__img-box img {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+.footer__img-box img:hover {
+  color: tomato;
+}
+
+.footer-copyright {
+  font-weight: 600;
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: #fff;
+  opacity: 0.6;
+}
+
 @media only screen and (max-width: 1200px) {
   .site-header {
     padding: 30px;
