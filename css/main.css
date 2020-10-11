@@ -794,17 +794,40 @@ START STYLING
     background-color: #2C6269;
   }
   .site-nav--open {
-    height: 100vh;
+    height: 100%;
     position: fixed;
     z-index: 2;
+    margin-top: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 48px;
     top: 0;
     right: 0;
     width: 50%;
     background-color: #2C6269;
+  }
+  .site-nav__list {
+    width: 100%;
+    margin-top: 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .nav-list__link {
+    margin: 0;
+  }
+  .site-header__contact-link {
+    margin-top: 36px;
+    margin-bottom: auto;
   }
   .close-btn {
     display: block;
